@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Welcome!"
+title:  "Ciao!"
 date:   2013-06-25 23:43:34
-categories: 
+categories:
+tags: [general, welcome, boh]
 post_author: Francesco Fraioli
 ---
 
-Hi
+Benvenuti su Reflusso Grafico. 
+L'ambizione di questo blog è offrire strumenti, documenti e link utili per i graphic designer impegnati nell'ambito delle applicazioni web e mobile.

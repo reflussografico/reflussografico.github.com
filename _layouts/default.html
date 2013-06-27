@@ -27,15 +27,9 @@
         }(document, 'script', 'facebook-jssdk'));
         </script>
         <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <img src="{{ site.url }}/graphic-loves-coding.png">
-            </div>
-
-                {{ content }}
-
-            <div class="footer">
+          <!--<div class="top"></div>-->
+          <div class="site" id="start">
+            <div class="sidebar">
               <div class="contact">
                 <p>
                   <h4>Francesco Fraioli<br />
@@ -43,14 +37,22 @@
                   <small>reflussografico@gmail.com</small>
                 </p>
               </div>
-              <div class="contact">
-                <p>
-                  <small><a href="http://github.com/reflussografico/">github.com/reflussografico</a></small><br />
-                  <small><a href="http://twitter.com/reflussografico/">twitter.com/reflussografico</a></small><br />
-                </p>
-              </div>
+            </div>
+            <div class="header">
+              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+              <img src="{{ site.url }}/graphic-loves-coding.png" alt="graphic loves coding">
+            </div>
+
+                {{ content }}
+
+            <div class="footer">
+              <p>
+                <small><a href="http://github.com/reflussografico/">github.com/reflussografico</a></small><br />
+                <small><a href="http://twitter.com/reflussografico/">twitter.com/reflussografico</a></small><br />
+              </p>
             </div>
           </div>
-        </div> <!-- /container -->
+        </div><!-- /container -->
+      </div> 
     </body>
 </html>
