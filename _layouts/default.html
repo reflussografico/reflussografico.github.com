@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,12 +17,20 @@
 
     </head>
     <body>
-
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=267703339926654";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div class="container">
           <div class="site">
             <div class="header">
               <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <img src="graphic-loves-coding.png">
+              <img src="{{ site.url }}/graphic-loves-coding.png">
             </div>
 
                 {{ content }}
@@ -44,6 +52,5 @@
             </div>
           </div>
         </div> <!-- /container -->
-
     </body>
 </html>
